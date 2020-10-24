@@ -1,9 +1,10 @@
 # _JavaScript Basic_
 
-## Seções Abortadas neste Repositório
+## Seções Abordadas neste Repositório
 
 * Tipos Primitivos
 * Tratamentos De Dados
+* Operadores
 
 
 ## 🚀 Configurações

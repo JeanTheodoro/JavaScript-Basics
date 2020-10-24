@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const porcentagem = 100
+        
+       let numeroTotalEleitores = parseInt(prompt("Informe o número total de eleitores de um município"))
+       let totalVotosBrancos = parseInt(prompt("Informe o número total de votos brancos"))
+       let totalVotosNulos = parseInt(prompt("Informe o número total de votos nulos"))
+       let totalVotosValidos = parseInt(prompt("Informe o número total de votos válidos"))
+
+       let porcentagemBrancos = (totalVotosBrancos / numeroTotalEleitores) * porcentagem
+       let porcentagemNulos = (totalVotosNulos / numeroTotalEleitores) * porcentagem 
+       let porcentagemValidos = (totalVotosValidos / numeroTotalEleitores) * porcentagem
+       
+       alert("Total de eleitores " +  numeroTotalEleitores + " pessoas " + " votos brancosm nulos e válidos respectivamente : " + parseFloat(porcentagemBrancos.toFixed(2)) + " , " + parseFloat(porcentagemNulos.toFixed(2)) + " e " + parseFloat(porcentagemValidos.toFixed(2)) + " % " )
+
+    </script>
+</body>
+</html>
