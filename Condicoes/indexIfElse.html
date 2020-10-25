@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var inicioAula = "11/10/2020 05:00"
+        var fimAula = "11/10/2020 05:59"
+  
+        debugger
+        var horario = prompt("Informe o hprário que você se dispertou ? Exemplo de daod: 07:00 ")
+
+        var retorno = new Date("11/10/2020 " + horario) >= new Date(inicioAula) && new Date("11/10/2020 " + 
+        horario) <= new Date(fimAula)
+
+    
+
+        if(retorno){
+
+            alert("Parabéns você está acordado")
+
+        }else{
+            
+            alert("Infelizmente você acordou tarde para assitir a aula ")
+        }
+
+    </script>
+</body>
+</html>
