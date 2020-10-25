@@ -4,7 +4,8 @@
 
 * Tipos Primitivos
 * Tratamentos De Dados
-* operadores
+* Operadores
+* Estrutura Condicional
 
 
 ## 🚀 Configurações
