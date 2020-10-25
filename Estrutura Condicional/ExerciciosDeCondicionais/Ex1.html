@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const agua =  40.00
+        const luz = 50.00
+        const internet = 80.00
+        const cursos = 97.00
+        const mercado = 800.00
+        const aluguel = 1200.00
+
+        var mediaDeGasto = agua + luz + internet + cursos + mercado + aluguel
+        debugger
+        let salarioDia15 = parseFloat(prompt(" Informe o salário recebido no dia 15 do mes vigente, como por exemplo: 1045.00"))
+        let salarioDia30 = parseFloat(prompt(" Informe o salário recebido no dia 30 do mes vigente, como por exemplo: 1045.00"))
+
+        var totalSalarioMes = (salarioDia15 + salarioDia30)
+
+        if((totalSalarioMes - mediaDeGasto) > mediaDeGasto){
+            
+            alert("Parabéns! Vamos investir um pouco")
+
+        }else{
+
+              
+            alert("Você esta ficando com a conta negativa. Precisa fazer cortes e investir em educação para virar o jogo")
+
+        }
+
+    </script>
+</body>
+</html>

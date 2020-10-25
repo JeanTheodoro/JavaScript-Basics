@@ -8,16 +8,16 @@
 <body>
     <script>
 
-        const porcentagem = 100
+        const PORCENTAGEM = 100
         
        let numeroTotalEleitores = parseInt(prompt("Informe o número total de eleitores de um município"))
        let totalVotosBrancos = parseInt(prompt("Informe o número total de votos brancos"))
        let totalVotosNulos = parseInt(prompt("Informe o número total de votos nulos"))
        let totalVotosValidos = parseInt(prompt("Informe o número total de votos válidos"))
 
-       let porcentagemBrancos = (totalVotosBrancos / numeroTotalEleitores) * porcentagem
-       let porcentagemNulos = (totalVotosNulos / numeroTotalEleitores) * porcentagem 
-       let porcentagemValidos = (totalVotosValidos / numeroTotalEleitores) * porcentagem
+       let porcentagemBrancos = (totalVotosBrancos / numeroTotalEleitores) * PORCENTAGEM
+       let porcentagemNulos = (totalVotosNulos / numeroTotalEleitores) * PORCENTAGEM 
+       let porcentagemValidos = (totalVotosValidos / numeroTotalEleitores) * PORCENTAGEM
        
        alert("Total de eleitores " +  numeroTotalEleitores + " pessoas " + " votos brancosm nulos e válidos respectivamente : " + parseFloat(porcentagemBrancos.toFixed(2)) + " , " + parseFloat(porcentagemNulos.toFixed(2)) + " e " + parseFloat(porcentagemValidos.toFixed(2)) + " % " )
 

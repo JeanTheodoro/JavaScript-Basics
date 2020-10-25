@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        const DESCONT0_CINCO_PORCENTO = 0.05
+        const DESCONTO_DEZ_PORCENTO = 0.10
+        const DESCONTO_QUINZE_PORCENTO = 0.15
+        
+
+        let salario = parseFloat(prompt(" Informe seu salário, exemplo: 1000.00"))
+
+        if(salario < 1000.00 ) {
+            
+            alert("O desconto é de 5% dos salário R$  " + salario + " é de R$ " + salario * DESCONT0_CINCO_PORCENTO)
+
+        }else if(salario >= 1000.00 && salario <= 2000.00 ){
+
+            alert("O desconto é de 10% dos salário R$  " + salario + " é de R$ " + salario * DESCONTO_DEZ_PORCENTO)
+        
+
+        }else if(salario > 2000.000){
+
+            alert("O desconto é de 10% dos salário R$  " + salario + " é de R$ " + salario * DESCONTO_QUINZE_PORCENTO)
+
+        }
+
+    </script>
+</body>
+</html>
