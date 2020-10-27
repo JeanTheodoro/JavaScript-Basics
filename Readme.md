@@ -6,6 +6,7 @@
 * Tratamentos De Dados
 * Operadores
 * Estrutura Condicional
+* Operadores Lógicos
 
 
 ## 🚀 Configurações

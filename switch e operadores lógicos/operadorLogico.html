@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        const max = 100
+        const min = 50
+        const men = 20
+
+        let valueFirts = parseFloat(prompt("Informe o primeiro valor cliente"))
+        let valueSecond = parseFloat(prompt("Informe o segundo valor do cliente"))
+        let valueThirt = parseFloat(prompt("Informe o terceiro valor do cliente"))
+
+        let media = ((valueFirts + valueSecond + valueThirt) / 3)
+
+        if(media >= max){
+            alert("Parabéns, sua média é maior que 100")
+        }else if( media >= min && media < max){
+            alert("mostrar Muito bem, você esta na media, vamos melhorar")
+        }else if(media >= men && media < min){
+            alert("mostrar É, você precisa melhorar estamos aqui para te ajudar.")
+        }else if(media < men){
+            alert("Cara, realmente é isso que você deseja?")
+        }
+
+        
+    </script>
+
+</body>
+</html>
