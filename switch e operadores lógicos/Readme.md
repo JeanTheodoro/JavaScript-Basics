@@ -8,4 +8,4 @@ b. se​ media >= 50  &&  media < 100, mostrar "Muito bem, você esta na media, 
 
 c. se​ media >= 20  &&  media < 50​, mostrar "É, você precisa melhorar estamos aqui para te ajudar." 
 
-c. se​ media < 20, mostrar "Cara, realmente é isso que você deseja? "
+d. se​ media < 20, mostrar "Cara, realmente é isso que você deseja? "
