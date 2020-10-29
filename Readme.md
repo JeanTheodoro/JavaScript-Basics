@@ -7,7 +7,8 @@
 * Operadores
 * Estrutura Condicional
 * Operadores Lógicos
-
+* Arrays
+* Laços de Repetição
 
 ## 🚀 Configurações
 
