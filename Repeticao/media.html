@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <script>
+        
+        const min = 3
+        var avg = []
+        var media = 0;
+            
+            for(let i = 0; i < min; i++){
+
+                avg[i] = Number(prompt("Informe os " + (i+1) + " ª: "))
+                media = media + avg[i]
+            }
+
+            document.writeln("Media: "+ (media/min).toFixed(2) )
+         
+    </script>
+</body>
+</html>
