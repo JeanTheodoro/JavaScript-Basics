@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    
+    <script>
+
+        var nomeCliente = []
+        var mostrar_sexo = []
+        var valor = []
+        var soma = 0
+        var qdnCliente = 3
+
+        for(nun = 0; nun < qdnCliente; nun++){
+           
+            nomeCliente[nun] = prompt("Digite o nome do cliente "+ (nun + 1) + ": ");
+            var sexo = prompt("Digite o seu sexo\nM para masculino\nF para feminino");
+            mostrar_sexo[nun] = (sexo.trim().toUpperCase() == "M" ? "M" : "F")
+            valor[nun] = parseInt(prompt("Digite o valor: " + mostrar_sexo[nun] + " " + nomeCliente[nun]));
+            soma = soma +  valor[nun];
+            
+        }
+
+        media = soma / qdnCliente;
+        document.write("<hr> A Média dos participantes foi: <b> " + media + "</b>");
+
+        if(media >= 100){
+            document.write("<hr> Parabéns a média de vocês é maior ou igual 100 = " + media.toFixed(2));
+        }else if(media >= 50 && media < 100){
+            document.write("<hr> Muito bem você está na média = " + media.toFixed(2))
+        }else if(media >= 20 && media < 50){
+            document.write("<hr> Muito bem você está na média, mais podemos melhorar, se esforce mais = " + media.toFixed(2))
+        }else{
+            document.write("Pessoal é isso realmente vocês querem = " + media.toFixed(2))
+        }
+
+
+ 
+    </script>
+
+</body>
+</html>
