@@ -1,4 +1,4 @@
-# _JavaScript Basic_
+# _JavaScript_ Para Iniciantes
 
 ## Seções Abordadas neste Repositório
 
@@ -7,8 +7,9 @@
 * Operadores
 * Estrutura Condicional
 * Operadores Lógicos
-* Arrays
+* _Arrays_
 * Laços de Repetição
+* _Hash_
 
 ## 🚀 Configurações
 

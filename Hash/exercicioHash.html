@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    
+    <script>
+
+        var colecoesAlunos = []
+        var soma = 0
+
+        var qdnAlunos = prompt("Informe A quantidade de alunos que há na sala de aula: ")
+        
+        for(nun = 0; nun < qdnAlunos; nun++){
+           
+            var aluno = { }
+            aluno.nome = prompt("Digite o nome do Aluno "+ (nun + 1) + ": ");
+            var sexo = prompt("Digite o seu sexo\nM para masculino\nF para feminino");
+            aluno.sexo = (sexo.trim().toUpperCase() == "M" ? "M" : "F")
+            aluno.nota1 = parseFloat(prompt("Digite a nota1 do aluno: " + " " + aluno.nome));
+            aluno.nota2 = parseFloat(prompt("Digite a nota2 do aluno: " + " " + aluno.nome));
+            colecoesAlunos.push(aluno)
+            soma = soma +  ((aluno.nota1 + aluno.nota2)/2)
+
+        }
+       
+        media = soma / qdnAlunos;
+        document.write("<hr> A Média dos alunos foi: <b> " + media + "</b>");
+
+    </script>
+
+</body>
+</html>
