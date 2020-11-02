@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    
+    <script>
+        
+        var notas = []
+
+        notas = leia()
+
+        var average = media(notas)
+
+        showMedia(average)
+
+        function leia(){
+            
+            let qdnNotas = parseInt(prompt("Informe a quantidade de notas do alunos: "))
+
+            for(let i = 0; i < qdnNotas; i++){
+                
+                notas[i] = parseFloat(prompt("Informe a " + (i+1) + " ª nota do aluno"))
+            }
+
+            return notas
+        }
+
+        
+        function media(notas){
+
+            average = 0
+
+            for(let j = 0; j < notas.length; j++){
+
+                average += notas[j]
+            }   
+
+            return average/notas.length
+        }
+
+        function showMedia(average){
+
+            document.write("<hr> A Média dos alunos foi: <b> " + average.toFixed(2) + "</b>")
+            
+            if(average >= 7){
+                debugger
+                document.write("<hr> A Média do aluno foi: <b> " + average.toFixed(2) + ",  aluno aprovado</b>")
+            }else{
+                document.write("<hr> A Média do aluno foi: <b> " + average.toFixed(2) + ", media insatisfatora aluno reprovado</b>")
+            }
+        }
+        
+        
+
+    </script>
+
+</body>
+</html>
