@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    
+    <script>
+        
+      alert("Seja Bem Vindo")
+
+      do{
+        
+        let opcao = parseInt(prompt("Informe a opção que deseja: \n (1)-> Cálculadora\n (2)-> Tabuada\n (3)-> Sair do progama"))
+        
+        switch(opcao){
+            case 1:
+                calculadora()
+            case 2:
+                tabuada()
+        }
+
+      }while(opcao != 3)
+
+        function calculadora(){
+
+            var sair = 0;
+
+            do{
+
+                n1 = Number(prompt("Infome o primiero número: "))
+                n2 = Number(prompt("Informe o segundo número: "))
+
+                operador = prompt("Informe o operador")
+                debugger
+                
+                if(validarOperdor(operador)){
+                    debugger    
+                    let valueCal = calcular(n1,n2, operador)
+                    document.write("Cálculo: " + valueCal)
+                    sair = 3
+
+                }else{
+
+                    sair = parseInt(prompt("Informe o operador corretamente ex: +,-,x e / ou digite 3 para volta no menu principal"))
+                }
+
+
+
+            }while(sair !=3)
+
+        }
+
+     function tabuada(){
+        number = parseInt(prompt("Infome o número da tabuada: "))
+        
+        for(let i = 1; i < 11; i++){
+
+            document.writeln(number + " x " + i + " = " + (number * i) )
+
+        }
+    }
+        
+    function validarOperdor(operador){
+        
+        debugger
+        switch(operador){
+            case '+':
+                return true
+                break
+            case '-':
+                return true
+                break
+            case 'x':
+                return true
+                break
+            case '/':
+                return true
+                break
+
+        }
+    }
+
+    function calcular(n1,n2,operador){
+        
+        var calculo = 0 
+        
+        switch(operador){
+            case '+':
+                calculo = n1 + n2
+                break
+            case '-':
+                calculo = n1 - n2
+                break
+            case 'x':
+                calculo = n1 * n2
+                break
+            case '/':
+                calculo = n1 / n2
+                break
+
+        }  
+
+        return calculo
+    } 
+
+    </script>
+
+</body>
+</html>
