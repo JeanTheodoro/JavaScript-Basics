@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    
+    <script>
+
+    menu();
+
+        function menu(){
+            opcao = parseInt(prompt("Informe a opção desejada :\n (1) -> Tabuada\n (2) -> Calcular Media\n (3)-> Sair"))
+            debugger
+            if(opcao == 1){
+                tabuada()
+            }else if(opcao == 2){
+                media()
+            }else if(opcao == 3){
+                return
+            }else if(opcao > 3){
+                alert("Opção inválida")
+            
+            menu()
+        }
+
+    }
+
+    function tabuada(){
+
+        tabuada = parseInt(prompt("Informe qual tabuada você quer calcular: "))
+        mensage = ""
+
+        for(i = 1; i <= 10; i++){
+            mensage  += "\n" + tabuada + " X " + i + " = " + tabuada*i + " \n"
+        }
+
+        alert(mensage)
+        menu()
+        
+    }
+
+    function media(){
+
+        qdnNota = parseInt(prompt("Informe a quantidade de notas: "))
+        soma = 0
+
+        for(j = 0; j < qdnNota; j++){
+            nota = Number(prompt("Inform e a " + (j+1) + " ª nota: "))
+            soma += nota
+        }
+
+        alert("A Média da nota é: " + (soma/qdnNota).toFixed(2))
+        menu()
+    }
+
+    </script>
+
+</body>
+</html>
