@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    
+    <script>
+        
+     
+    class Retangulo{
+        constructor(altura, largura) {
+            this.altura = altura
+            this.largura = largura
+        }
+
+        get calcularArea() {
+            return this.altura * this.largura
+        }
+
+        
+
+    }
+
+    const quadrado = new Retangulo(10,10) 
+    alert("A Área de um retangulo com altura " + quadrado.altura + " cm  a largura " + quadrado.largura + " cm é de : " + quadrado.calcularArea )   
+
+    </script>
+
+</body>
+</html>

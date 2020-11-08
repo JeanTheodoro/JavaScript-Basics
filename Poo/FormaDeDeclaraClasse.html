@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    
+    <script>
+        
+        Pessoa = function(){
+        this.nome =  ''
+        this.idade =  ''
+        this.cpf = ''
+        this.andar = function(){
+            alert(this.nome + " gosta de correr")
+        }
+        this.falar = function(){
+            alert(this.nome + " é meu nome e tenho "+ this.idade + " anos")
+        }
+    }
+
+    pessoa = new Pessoa()
+    pessoa.nome = 'João'
+    pessoa.idade = '26'
+    pessoa.cpf = '121211154'
+    pessoa.andar()
+    pessoa.falar()
+    alert("O Objeto da classe pessoa nome: " + pessoa.nome + " Idade: "+ pessoa.idade + " CPF: " + pessoa.cpf)
+    
+    </script>
+
+</body>
+</html>

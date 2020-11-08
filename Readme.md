@@ -10,6 +10,9 @@
 * _Arrays_
 * Laços de Repetição
 * _Hash_
+* Função e Função Recursiva
+* Poo (Programação Orientado a Objetos)
+  
 
 ## 🚀 Configurações
 
