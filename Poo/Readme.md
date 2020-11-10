@@ -40,5 +40,6 @@ __Declaração__ classe:
 
 
 __Declaração__ objeto:
+
     const quadrado = new Retangulo(10,10) 
     alert("A Área de um retangulo com altura " + quadrado.altura + " cm  a largura " + quadrado.largura + " cm é de : " + quadrado.calcularArea )  

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    
+    <script>
+
+        class Telegram {
+
+            constructor(){
+                this.nome = ""
+                this.contatos = ""
+                this.grupos = ""
+             
+            }
+            notificao(contatos){
+                alert( this.nome +  ", você recebeu uma nova menssagem do " + this.contatos)
+            }
+
+            adicionarContatos(usuario){
+                alert("Você adicionou um novo contato chamado " + this.contatos)
+             
+            }
+
+        } 
+
+        usuario = new Telegram()
+        usuario.nome = "joaquim"
+        usuario.contatos = "joao"   
+        usuario.adicionarContatos()
+        usuario.notificao()
+   
+    </script>
+
+</body>
+</html>
